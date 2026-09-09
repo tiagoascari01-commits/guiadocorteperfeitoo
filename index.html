@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>+100 Fichas de Configuração para Cricut</title>
+<meta name="description" content="Tenha acesso imediato a mais de 100 fichas profissionais de configuração de corte, prontas para consultar e usar na sua Cricut hoje mesmo.">
+<meta property="og:title" content="+100 Fichas de Configuração para Cricut">
+<meta property="og:description" content="100 fichas profissionais de configuração de corte para materiais usados na máquina Cricut.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito+Sans:wght@400;600;700&display=swap">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          background: '#ffffff',
+          foreground: '#1a1a2e',
+          card: '#ffffff',
+          border: '#e7e5e0',
+          secondary: '#f3f4f2',
+          'secondary-foreground': '#1a1a2e',
+          'muted-foreground': '#6b7280',
+          destructive: '#D32B2B',
+          'brand-soft': '#E8F7EF',
+          offwhite: '#F7F6F2',
+          graphite: '#2b2b33',
+        },
+        fontFamily: {
+          display: ['"Baloo 2"', 'system-ui', 'sans-serif'],
+          sans: ['"Nunito Sans"', 'system-ui', 'sans-serif'],
+          soft: ['"Nunito Sans"', 'system-ui', 'sans-serif'],
+        },
+        keyframes: {
+          'pulse-cta': {
+            '0%, 100%': { transform: 'scale(1)', boxShadow: '0 8px 24px -6px rgba(31,174,92,.5)' },
+            '50%': { transform: 'scale(1.04)', boxShadow: '0 14px 32px -6px rgba(31,174,92,.65)' },
+          },
+          'carousel-scroll-left': {
+            '0%': { transform: 'translateX(0)' },
+            '100%': { transform: 'translateX(-50%)' },
+          },
+          'slide-in-right': {
+            '0%': { transform: 'translateX(120%)', opacity: '0' },
+            '100%': { transform: 'translateX(0)', opacity: '1' },
+          },
+        },
+        animation: {
+          'carousel-scroll-left': 'carousel-scroll-left 30s linear infinite',
+          'slide-in-right': 'slide-in-right .5s ease-out',
+        },
+      },
+    },
+  };
+</script>
+<style>
+  :root {
+    --shadow-card: 0 4px 20px -6px rgba(31, 174, 92, .18);
+    --shadow-soft: 0 8px 24px -6px rgba(31, 174, 92, .5);
+  }
+  body { background: #fff; }
+  .from-brand-soft { --tw-gradient-from: #E8F7EF var(--tw-gradient-from-position); --tw-gradient-to: rgb(232 247 239 / 0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+  /* FAQ accordion */
+  .faq-panel { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+  .faq-item.open .faq-panel { max-height: 400px; }
+  .faq-item.open .faq-chevron { transform: rotate(180deg); }
+</style>
+</head>
+<body class="font-sans text-foreground">
+
+<!-- Purchase notification -->
+<div class="pointer-events-none fixed top-4 right-4 z-[100] flex flex-col gap-2 max-w-[calc(100vw-2rem)] overflow-hidden">
+  <div class="pointer-events-auto flex items-center gap-3 rounded-xl border border-green-200 bg-white/95 px-4 py-3 shadow-lg backdrop-blur min-w-[260px] animate-slide-in-right">
+    <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#1FAE5C] to-emerald-600 text-white">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M16 10a4 4 0 0 1-8 0"></path><path d="M3.103 6.034h17.794"></path><path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path></svg>
+    </div>
+    <div class="text-sm leading-tight">
+      <p class="font-semibold text-green-900">Priscila <span class="font-normal text-green-700">acabou de comprar</span></p>
+      <p class="text-green-700"><span class="font-semibold">Pacote Completo</span><span class="text-gray-500"> · há 19 segundos</span></p>
+    </div>
+  </div>
+</div>
+
+<!-- Sticky offer bar -->
+<div class="sticky top-0 z-40 bg-[#1FAE5C] text-center text-xs font-bold text-white shadow-md sm:text-sm">
+  <p class="px-4 py-2.5">🔥 OFERTA SOMENTE HOJE <span id="today-date"></span></p>
+</div>
+
+<!-- Hero -->
+<header class="relative overflow-hidden bg-gradient-to-b from-brand-soft to-background">
+  <div class="mx-auto grid max-w-6xl items-center gap-10 px-5 py-14 md:grid-cols-2 md:py-20">
+    <div class="flex flex-col items-center text-center md:items-start md:text-left">
+      <div>
+        <span class="inline-flex items-center gap-1.5 rounded-full bg-[#1FAE5C]/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[#1FAE5C]">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg>
+          APENAS R$10
+        </span>
+      </div>
+      <h1 class="mt-5 font-display text-4xl font-extrabold leading-tight tracking-tight md:text-5xl">+100 FICHAS DE CONFIGURAÇÃO PARA CRICUT PARA <span class="text-[#1FAE5C]">CORTAR SEM ERRO</span></h1>
+      <p class="mt-5 max-w-md font-soft text-lg text-muted-foreground">A configuração certa de cada material — inclusive os nacionais — que o Design Space não te entrega. Pare de desperdiçar vinil e papel testando pressão no escuro e corte perfeito já no primeiro corte.</p>
+      <img src="https://guiadocorteperfeitoo.lovable.app/__l5e/assets-v1/d67032c3-b042-4912-8910-46c89a28c49b/hero-mockup-cricut.webp" alt="Mockup Fichas Cricut Profissional" loading="lazy" class="mt-6 w-full max-w-md rounded-2xl shadow-[var(--shadow-card)]">
+      <div class="mt-8">
+        <button data-cta class="inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 text-base font-bold tracking-wide transition-all duration-200 hover:scale-[1.03] active:scale-95 bg-[#1FAE5C] text-white shadow-[var(--shadow-soft)] hover:shadow-xl animate-[pulse-cta_1.8s_ease-in-out_infinite]">QUERO COMEÇAR HOJE</button>
+      </div>
+      <ul class="mt-5 flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm font-semibold text-muted-foreground md:justify-start">
+        <li class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-[#1FAE5C]"><path d="M20 6 9 17l-5-5"></path></svg> Acesso imediato</li>
+        <li class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-[#1FAE5C]"><path d="M20 6 9 17l-5-5"></path></svg> Garantia de 15 dias</li>
+        <li class="flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-[#1FAE5C]"><path d="M20 6 9 17l-5-5"></path></svg> 100 fichas inclusas</li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<!-- Carousel -->
+<section class="bg-background py-16">
+  <div class="mx-auto max-w-6xl px-5">
+    <h2 class="font-display text-center text-2xl font-extrabold md:text-3xl">VEJA ALGUMAS DAS FICHAS QUE VOCÊ <span class="text-[#1FAE5C]">IRÁ RECEBER</span></h2>
+  </div>
+  <div class="relative mt-8 overflow-hidden">
+    <div class="flex w-max min-h-[265px] md:min-h-[385px] animate-carousel-scroll-left" aria-label="Carrossel automático" id="carousel-track"></div>
+  </div>
+</section>
+
+<!-- Antes / Depois -->
+<section class="bg-offwhite py-12 md:py-20 px-4">
+  <h2 class="text-center text-graphite font-extrabold text-2xl md:text-4xl max-w-3xl mx-auto leading-snug">Veja a diferença entre cortar no chute e seguir a configuração certa:</h2>
+  <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mt-10">
+    <div>
+      <div class="rounded-[16px] overflow-hidden shadow-lg">
+        <div class="bg-[#D32B2B] text-center py-3 px-4">
+          <p class="text-white font-extrabold text-2xl md:text-3xl leading-none">ANTES</p>
+          <p class="text-white font-semibold text-sm md:text-base mt-1">das Fichas de Configuração</p>
+        </div>
+        <img alt="ANTES das fichas de configuração" loading="lazy" class="w-full aspect-[466/292] object-cover" src="https://guiadocorteperfeitoo.lovable.app/__l5e/assets-v1/82f7faee-7954-473f-8194-2948bc09dede/antes-corte.webp">
+      </div>
+      <ul class="mt-5">
+        <li class="flex items-start gap-3 py-3 border-b border-graphite/15 last:border-0 text-graphite text-base md:text-lg"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1"><circle cx="12" cy="12" r="11" fill="#D32B2B"></circle><path d="M8 8l8 8M16 8l-8 8" stroke="#fff" stroke-width="2.5" stroke-linecap="round"></path></svg><span>"Ou corta tudo ou só risca a folha"</span></li>
+        <li class="flex items-start gap-3 py-3 border-b border-graphite/15 last:border-0 text-graphite text-base md:text-lg"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1"><circle cx="12" cy="12" r="11" fill="#D32B2B"></circle><path d="M8 8l8 8M16 8l-8 8" stroke="#fff" stroke-width="2.5" stroke-linecap="round"></path></svg><span>Desperdício de vinil e papel caro</span></li>
+        <li class="flex items-start gap-3 py-3 border-b border-graphite/15 last:border-0 text-graphite text-base md:text-lg"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1"><circle cx="12" cy="12" r="11" fill="#D32B2B"></circle><path d="M8 8l8 8M16 8l-8 8" stroke="#fff" stroke-width="2.5" stroke-linecap="round"></path></svg><span>Testando todas as pressões da lâmina sem acertar</span></li>
+      </ul>
+    </div>
+    <div>
+      <div class="rounded-[16px] overflow-hidden shadow-lg">
+        <div class="bg-[#1E8E29] text-center py-3 px-4">
+          <p class="text-white font-extrabold text-2xl md:text-3xl leading-none">DEPOIS</p>
+          <p class="text-white font-semibold text-sm md:text-base mt-1">das Fichas de Configuração</p>
+        </div>
+        <img alt="DEPOIS das fichas de configuração" loading="lazy" class="w-full aspect-[466/292] object-cover" src="https://guiadocorteperfeitoo.lovable.app/__l5e/assets-v1/2ef15ce2-8569-45ec-a070-6af281b45ac2/depois-corte.webp">
+      </div>
+      <ul class="mt-5">
+        <li class="flex items-start gap-3 py-3 border-b border-graphite/15 last:border-0 text-graphite text-base md:text-lg"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1"><circle cx="12" cy="12" r="11" fill="#19E713"></circle><path d="M7 12.5l3.5 3.5L17 9" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>Corte perfeito de primeira</span></li>
+        <li class="flex items-start gap-3 py-3 border-b border-graphite/15 last:border-0 text-graphite text-base md:text-lg"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1"><circle cx="12" cy="12" r="11" fill="#19E713"></circle><path d="M7 12.5l3.5 3.5L17 9" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>Zero material jogado fora</span></li>
+        <li class="flex items-start gap-3 py-3 border-b border-graphite/15 last:border-0 text-graphite text-base md:text-lg"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1"><circle cx="12" cy="12" r="11" fill="#19E713"></circle><path d="M7 12.5l3.5 3.5L17 9" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>Configuração pronta em segundos, sem tentativa e erro</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- É pra você? -->
+<section class="px-5 py-12">
+  <div class="mx-auto max-w-3xl">
+    <h2 class="mb-2 font-display text-center text-2xl font-extrabold text-foreground">Este produto é para você?</h2>
+    <p class="mb-8 text-center text-sm text-muted-foreground">Descubra rapidamente se este produto é para você</p>
+    <div class="flex flex-col gap-5">
+      <div class="rounded-3xl border-2 border-[#1FAE5C] bg-[#1FAE5C]/10 p-6 shadow-[var(--shadow-card)]">
+        <div class="mb-5 flex flex-col items-center">
+          <span class="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#1FAE5C] text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><path d="M20 6 9 17l-5-5"></path></svg></span>
+          <h3 class="text-xl font-bold text-foreground">É pra você se...</h3>
+        </div>
+        <div class="space-y-3">
+          <div class="flex items-center gap-3 rounded-2xl bg-card px-4 py-3 shadow-sm"><span class="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#1FAE5C] text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><path d="M20 6 9 17l-5-5"></path></svg></span><span class="text-[15px] font-medium text-foreground">Você tem uma Cricut (Maker, Explore ou Joy) e trava na hora de acertar a configuração</span></div>
+          <div class="flex items-center gap-3 rounded-2xl bg-card px-4 py-3 shadow-sm"><span class="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#1FAE5C] text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><path d="M20 6 9 17l-5-5"></path></svg></span><span class="text-[15px] font-medium text-foreground">Você já perdeu vinil e papel testando corte que não passou (ou passou demais)</span></div>
+          <div class="flex items-center gap-3 rounded-2xl bg-card px-4 py-3 shadow-sm"><span class="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#1FAE5C] text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><path d="M20 6 9 17l-5-5"></path></svg></span><span class="text-[15px] font-medium text-foreground">Você usa material nacional que não bate com as opções do Design Space</span></div>
+          <div class="flex items-center gap-3 rounded-2xl bg-card px-4 py-3 shadow-sm"><span class="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#1FAE5C] text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><path d="M20 6 9 17l-5-5"></path></svg></span><span class="text-[15px] font-medium text-foreground">Você quer cortar certo de primeira, sem ficar refazendo</span></div>
+        </div>
+      </div>
+      <div class="rounded-3xl border border-destructive/20 bg-destructive/5 p-6">
+        <div class="mb-5 flex flex-col items-center">
+          <span class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-destructive/15 text-destructive"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></span>
+          <h3 class="text-lg font-bold text-foreground">NÃO é pra você se...</h3>
+        </div>
+        <div class="space-y-2.5">
+          <div class="flex items-center gap-3 px-4 py-2.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0 text-destructive"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg><span class="text-sm text-muted-foreground">Você já domina de cabeça a configuração de todos os materiais</span></div>
+          <div class="flex items-center gap-3 px-4 py-2.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0 text-destructive"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg><span class="text-sm text-muted-foreground">Você procura um curso de design ou de como usar a máquina do zero</span></div>
+          <div class="flex items-center gap-3 px-4 py-2.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0 text-destructive"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg><span class="text-sm text-muted-foreground">Você não se importa em desperdiçar material testando</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Por que escolher -->
+<section class="bg-white py-16">
+  <div class="mx-auto max-w-5xl px-5 text-center">
+    <h2 class="font-display text-2xl font-extrabold md:text-3xl">Por que escolher essas Fichas?</h2>
+    <span class="mx-auto mt-3 block h-1 w-16 rounded-full bg-[#1FAE5C]"></span>
+    <div class="mt-10 grid gap-6 text-left sm:grid-cols-2 lg:grid-cols-3">
+      <div class="rounded-2xl border border-[#1FAE5C]/40 bg-card p-7 shadow-[var(--shadow-card)]"><span class="text-3xl">🎯</span><h3 class="mt-3 text-lg font-extrabold">A configuração que a Cricut não te dá</h3><p class="mt-2 font-soft text-muted-foreground">O ajuste certo de cada material — inclusive os nacionais, que o Design Space erra.</p></div>
+      <div class="rounded-2xl border border-[#1FAE5C]/40 bg-card p-7 shadow-[var(--shadow-card)]"><span class="text-3xl">⚡</span><h3 class="mt-3 text-lg font-extrabold">Consulta em segundos</h3><p class="mt-2 font-soft text-muted-foreground">Abre a ficha do material e já corta certo, sem tentativa e erro.</p></div>
+      <div class="rounded-2xl border border-[#1FAE5C]/40 bg-card p-7 shadow-[var(--shadow-card)]"><span class="text-3xl">💰</span><h3 class="mt-3 text-lg font-extrabold">Menos desperdício, mais lucro</h3><p class="mt-2 font-soft text-muted-foreground">Acerta de primeira e para de jogar vinil e papel caro fora.</p></div>
+      <div class="rounded-2xl border border-[#1FAE5C]/40 bg-card p-7 shadow-[var(--shadow-card)]"><span class="text-3xl">✂️</span><h3 class="mt-3 text-lg font-extrabold">Meio corte na medida</h3><p class="mt-2 font-soft text-muted-foreground">Chega de "cortar tudo ou só riscar a folha" — o ponto certo por material.</p></div>
+      <div class="rounded-2xl border border-[#1FAE5C]/40 bg-card p-7 shadow-[var(--shadow-card)]"><span class="text-3xl">📁</span><h3 class="mt-3 text-lg font-extrabold">Tudo num só lugar</h3><p class="mt-2 font-soft text-muted-foreground">Organizado por material, pra consultar a qualquer hora, no celular ou no PC.</p></div>
+    </div>
+    <div class="mt-10">
+      <button data-cta class="inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 text-base font-bold tracking-wide transition-all duration-200 hover:scale-[1.03] active:scale-95 bg-[#1FAE5C] text-white shadow-[var(--shadow-soft)] hover:shadow-xl animate-[pulse-cta_1.8s_ease-in-out_infinite]">QUERO AS FICHAS AGORA</button>
+    </div>
+  </div>
+</section>
+
+<!-- Acesso imediato / materiais -->
+<section class="bg-brand-soft py-16">
+  <div class="mx-auto max-w-6xl px-5 text-center">
+    <div class="inline-flex items-center rounded-full bg-[#1FAE5C] px-4 py-1.5 text-sm font-bold text-white">ACESSO IMEDIATO</div>
+    <div class="mx-auto mt-6 grid max-w-2xl gap-6 text-left">
+      <div class="rounded-2xl border border-[#1FAE5C]/40 bg-card p-7 shadow-[var(--shadow-card)]">
+        <h3 class="mt-3 text-xl font-extrabold text-center">100 Fichas de Configuração para Cricut</h3>
+        <img src="https://guiadocorteperfeitoo.lovable.app/__l5e/assets-v1/d67032c3-b042-4912-8910-46c89a28c49b/hero-mockup-cricut.webp" alt="Mockup Fichas Cricut Profissional" loading="lazy" class="mt-4 block h-auto w-full rounded-xl">
+        <p class="mt-2 font-soft text-muted-foreground text-center">Configurações prontas e testadas para os materiais mais usados na Cricut.</p>
+        <ul class="mt-4 grid grid-cols-1 gap-2 sm:grid-cols-2" id="materials-list"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bônus -->
+<section class="bg-brand-soft py-16">
+  <div class="mx-auto max-w-5xl px-5 text-center">
+    <h2 class="mt-4 font-display text-2xl font-extrabold md:text-3xl">🎁 BÔNUS INCLUÍDOS</h2>
+    <span class="mx-auto mt-3 block h-1 w-16 rounded-full bg-[#1FAE5C]"></span>
+    <div class="mt-10 grid gap-5 text-left sm:grid-cols-2" id="bonus-grid"></div>
+  </div>
+</section>
+
+<!-- Depoimentos -->
+<section class="bg-background py-16 px-5">
+  <div class="mx-auto max-w-6xl">
+    <div class="text-center mb-10"><p class="text-xl md:text-2xl font-extrabold text-foreground leading-tight">O que as clientes estão dizendo</p></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+      <div class="flex flex-col gap-6">
+        <img loading="lazy" src="https://guiadocorteperfeitoo.lovable.app/__l5e/assets-v1/fede09ba-7b02-4dc1-80aa-b00384476e70/depoimento-2.webp" alt="Depoimento 2" class="w-full rounded-2xl shadow-lg border border-border/50">
+        <img loading="lazy" src="https://guiadocorteperfeitoo.lovable.app/__l5e/assets-v1/4cf717d4-7a84-4b9c-ad24-3af39eb53e21/depoimento-7.webp" alt="Depoimento 3" class="w-full rounded-2xl shadow-lg border border-border/50">
+      </div>
+      <div class="flex flex-col gap-6">
+        <img loading="lazy" src="https://guiadocorteperfeitoo.lovable.app/__l5e/assets-v1/5169f722-796c-49b5-9ece-fba9cb54d538/depoimento-4.webp" alt="Depoimento 4" class="w-full rounded-2xl shadow-lg border border-border/50">
+        <img loading="lazy" src="https://guiadocorteperfeitoo.lovable.app/__l5e/assets-v1/7c8cc4b5-614e-49a4-9d04-fe9bc592828d/depoimento-5.webp" alt="Depoimento 5" class="w-full rounded-2xl shadow-lg border border-border/50">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Planos -->
+<section id="planos" class="bg-brand-soft py-16">
+  <div class="mx-auto max-w-5xl px-5 text-center">
+    <h2 class="font-display text-2xl font-extrabold md:text-3xl">ESCOLHA O MELHOR PACOTE PARA VOCÊ!</h2>
+    <div class="mt-10 grid items-stretch gap-8 md:grid-cols-[2fr_3fr]">
+      <!-- Básico -->
+      <div class="flex flex-col rounded-3xl border border-border bg-card p-7 text-left shadow-sm">
+        <h3 class="text-xl font-extrabold text-center">Pacote Básico</h3>
+        <div class="mt-3 flex items-end justify-center gap-2"><span class="text-4xl font-extrabold text-foreground">R$10,00</span></div>
+        <ul class="mt-5 space-y-2.5 text-sm">
+          <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-[#1FAE5C]"><path d="M20 6 9 17l-5-5"></path></svg> 100 Fichas de Configuração para Cricut</li>
+          <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-[#1FAE5C]"><path d="M20 6 9 17l-5-5"></path></svg> Acesso em PDF pelo celular, tablet ou computador</li>
+          <li class="flex items-center gap-2 text-muted-foreground"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-destructive"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg> Bônus exclusivos não inclusos</li>
+        </ul>
+        <div class="mt-auto pt-6 flex justify-center"><button data-cta class="inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 text-base font-bold tracking-wide transition-all duration-200 hover:scale-[1.03] active:scale-95 bg-secondary text-secondary-foreground border border-border hover:bg-brand-soft">QUERO O BÁSICO</button></div>
+      </div>
+      <!-- Completo -->
+      <div class="relative flex flex-col rounded-[2rem] border-2 border-[#1FAE5C] bg-card p-8 text-left shadow-sm">
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2"><span class="whitespace-nowrap rounded-full bg-[#1FAE5C] px-5 py-1.5 text-xs font-black uppercase tracking-wider text-white shadow-md">⭐ MAIS VENDIDO</span></div>
+        <div class="mt-4 flex justify-center"><span class="whitespace-nowrap rounded-full bg-amber-400 px-5 py-1.5 text-xs font-black uppercase tracking-wider text-amber-950 shadow-md">🏆 MELHOR CUSTO-BENEFÍCIO</span></div>
+        <h3 class="mt-4 text-center text-2xl font-black text-[#1FAE5C]">Pacote Completo</h3>
+        <p class="mt-3 text-center text-sm font-semibold text-muted-foreground">De <span class="text-red-400 line-through">R$147,90</span> por</p>
+        <div class="mt-1 flex items-end justify-center gap-2"><span class="text-5xl font-black text-[#1FAE5C]">R$19,90</span></div>
+        <p class="mx-auto mt-4 w-fit rounded-full bg-[#1FAE5C]/10 px-5 py-2 text-center text-sm font-black text-[#1FAE5C]">VALOR ECONOMIZADO: R$128,00</p>
+        <ul class="mt-6 space-y-3 text-[15px]" id="completo-list"></ul>
+        <div class="mt-auto pt-8 flex justify-center"><button data-cta class="inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 text-base font-bold tracking-wide transition-all duration-200 hover:scale-[1.03] active:scale-95 bg-[#1FAE5C] text-white shadow-[var(--shadow-soft)] hover:shadow-xl animate-[pulse-cta_1.8s_ease-in-out_infinite]">QUERO O COMPLETO AGORA</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Garantia -->
+<section class="relative overflow-hidden bg-white py-16">
+  <div class="mx-auto max-w-3xl px-5">
+    <div class="flex flex-col items-center gap-6 rounded-3xl border border-green-100 bg-green-50/60 p-8 text-center shadow-sm sm:p-10">
+      <div class="grid h-16 w-16 place-items-center rounded-full bg-green-100 text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg></div>
+      <h2 class="text-2xl font-bold text-green-950 sm:text-3xl">Garantia de 15 dias</h2>
+      <p class="max-w-xl text-base leading-relaxed text-green-950/70">Se por qualquer motivo você não ficar satisfeita com as fichas, basta enviar um e-mail dentro de 15 dias e devolvemos 100% do seu dinheiro. <strong>Sem burocracia. O risco é todo nosso.</strong></p>
+      <div class="flex items-center gap-2 text-sm font-semibold text-green-700"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M20 6 9 17l-5-5"></path></svg><span>Devolução total e imediata</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="bg-background py-16">
+  <div class="mx-auto max-w-3xl px-5">
+    <h2 class="font-display text-center text-2xl font-extrabold md:text-3xl">PERGUNTAS FREQUENTES</h2>
+    <div class="mt-8 space-y-3" id="faq-list"></div>
+    <div class="mt-10 text-center"><button data-cta class="inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 text-base font-bold tracking-wide transition-all duration-200 hover:scale-[1.03] active:scale-95 bg-[#1FAE5C] text-white shadow-[var(--shadow-soft)] hover:shadow-xl animate-[pulse-cta_1.8s_ease-in-out_infinite]">TIREI MINHAS DÚVIDAS!</button></div>
+  </div>
+</section>
+
+<footer class="bg-transparent py-10 text-center text-muted-foreground">
+  <div class="mx-auto max-w-3xl px-5">
+    <div class="mt-4 flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs font-semibold">
+      <a href="#" class="hover:underline">Termos de Uso</a><span class="opacity-50">·</span>
+      <a href="#" class="hover:underline">Política de Privacidade</a><span class="opacity-50">·</span>
+      <a href="#" class="hover:underline">Suporte</a>
+    </div>
+    <p class="mt-4 text-xs opacity-70">© 2026 Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script>
+  // Today's date in the sticky bar (America/Sao_Paulo)
+  (function () {
+    var d = new Date();
+    var s = d.toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo' });
+    var el = document.getElementById('today-date');
+    if (el) el.textContent = s;
+  })();
+
+  // Carousel images (duplicated for seamless loop)
+  (function () {
+    var imgs = [
+      'https://i.ibb.co/hxsvsBRg/29.png',
+      'https://i.ibb.co/nszyFK6T/28.png',
+      'https://i.ibb.co/SD6pFf4K/27.png',
+      'https://i.ibb.co/xtjwGNdd/26.png',
+      'https://i.ibb.co/svFqtGFC/25.png',
+      'https://i.ibb.co/0VQvFyv4/24.png',
+      'https://i.ibb.co/nNDjf6dB/1b3270a4-d70d-40c2-9669-9cd2af70e2c0.png',
+      'https://i.ibb.co/mCnwX7DR/22.png',
+      'https://i.ibb.co/gLtg6FW0/21.png'
+    ];
+    var track = document.getElementById('carousel-track');
+    var html = '';
+    [].concat(imgs, imgs).forEach(function (p, i) {
+      html += '<img alt="Ficha de configuração para Cricut ' + ((i % imgs.length) + 1) + '" width="552" height="780" class="h-[265px] md:h-[385px] w-auto flex-none object-contain mx-2" loading="lazy" src="' + p + '">';
+    });
+    track.innerHTML = html;
+  })();
+
+  // Materials list
+  (function () {
+    var mats = ['Papel Fotográfico', 'Papel Adesivo', 'Vinil', 'Papel Kraft', 'Acetato', 'Cardstock', 'Papel Offset', 'Sulfite', 'Color Plus'];
+    var check = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0 text-[#1FAE5C]"><path d="M20 6 9 17l-5-5"></path></svg>';
+    document.getElementById('materials-list').innerHTML = mats.map(function (m) {
+      return '<li class="flex items-center justify-center gap-2 text-sm font-medium">' + check + ' ' + m + '</li>';
+    }).join('');
+  })();
+
+  // Bonus cards
+  (function () {
+    var bonus = [
+      ['⭐ Bônus #1 — Guia de Print & Cut Sem Erro', 'Como imprimir e cortar o contorno no lugar certo, sem o registro sair fora e sem perder qualidade. (Resolve a dor de quem faz adesivo, topo e planner.)'],
+      ['Bônus #2 — Meio Corte (Kiss Cut) Perfeito', 'O ajuste fino pra cortar só o vinil sem furar a base, em cada material.'],
+      ['Bônus #3 — Materiais Nacionais Testados', 'A lista de vinis e papéis brasileiros com a configuração personalizada que funciona.'],
+      ['Bônus #4 — Diagnóstico Rápido', 'Por que o corte não passou? Descubra em segundos (lâmina, pressão, tapete ou material).'],
+      ['Bônus #5 — +100 Arquivos Prontos para Cortar', 'Modelos liberados pra você já usar suas fichas.']
+    ];
+    var check = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M20 6 9 17l-5-5"></path></svg>';
+    document.getElementById('bonus-grid').innerHTML = bonus.map(function (b) {
+      return '<div class="flex gap-4 rounded-2xl border border-[#1FAE5C]/40 bg-card p-6 shadow-[var(--shadow-card)]"><span class="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-[#1FAE5C] text-white">' + check + '</span><div><h3 class="text-base font-extrabold">' + b[0] + '</h3><p class="mt-1 font-soft text-sm text-muted-foreground">' + b[1] + '</p></div></div>';
+    }).join('');
+  })();
+
+  // Pacote Completo feature list
+  (function () {
+    var check = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-4 w-4 shrink-0 text-[#1FAE5C]"><path d="M20 6 9 17l-5-5"></path></svg>';
+    var gift = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-1.5 inline h-4 w-4 text-[#1FAE5C]"><path d="M12 7v14"></path><path d="M20 11v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8"></path><path d="M7.5 7a1 1 0 0 1 0-5A4.8 8 0 0 1 12 7a4.8 8 0 0 1 4.5-5 1 1 0 0 1 0 5"></path><rect x="3" y="7" width="18" height="4" rx="1"></rect></svg>';
+    var feats = [
+      '+100 fichas de configuração de corte para diferentes materiais',
+      'Configurações para vinil adesivo, termocolante (DTV), holográfico, glitter, cardstock, adesivo, feltro e muito mais',
+      'Ajustes de lâmina, força/pressão, velocidade e quantidade de passadas por material',
+      'Configuração de material personalizado (custom material) para os materiais NACIONAIS que o Design Space erra',
+      'Ajuste certo do meio corte (kiss cut): pare de "cortar tudo ou só riscar a folha"',
+      'Fichas organizadas por tipo de material para uma consulta rápida',
+      'Configurações prontas para reduzir erros, testes e desperdício de material caro',
+      'Orientações para evitar cortes rasgados, incompletos ou desalinhados',
+      'Serve para Maker, Explore e Joy/Joy Xtra',
+      'Material em PDF para consultar pelo celular, tablet ou computador'
+    ];
+    var bonusFeats = [
+      'Bônus #1 — Guia de Print & Cut Sem Erro (imprima e corte o contorno no lugar certo)',
+      'Bônus #2 — Meio Corte Perfeito em Cada Material',
+      'Bônus #3 — Materiais Nacionais Testados',
+      'Bônus #4 — Mais de 200 Arquivos Prontos para Cortar',
+      'Bônus #5 — Mais de 150 Topos de Bolo Lucrativos'
+    ];
+    var html = feats.map(function (f) {
+      return '<li class="flex items-start gap-2.5 font-medium text-[#1a1a2e]">' + check + '<span>' + f + '</span></li>';
+    }).join('');
+    var star = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-2.5 w-2.5 fill-current"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>';
+    html += bonusFeats.map(function (f) {
+      return '<li class="flex items-start gap-2.5 font-bold text-[#1a1a2e]"><div class="mt-0.5 grid h-4 w-4 shrink-0 place-items-center rounded-full bg-[#1FAE5C] text-white">' + star + '</div><span>' + gift + '<span class="text-[#1a1a2e]">' + f + '</span></span></li>';
+    }).join('');
+    document.getElementById('completo-list').innerHTML = html;
+  })();
+
+  // FAQ accordion
+  (function () {
+    var faqs = [
+      ['Preciso ter conhecimento avançado na Cricut para usar as fichas?', 'Não. As fichas são feitas para consulta rápida: você abre a ficha do material e já usa a configuração pronta, mesmo sendo iniciante.'],
+      ['Funciona para qualquer modelo de Cricut?', 'Sim. Serve para Maker, Explore e Joy/Joy Xtra.'],
+      ['Quais materiais estão incluídos nas fichas?', 'Vinil adesivo, termocolante (DTV), holográfico, glitter, cardstock, adesivo, feltro, papéis nacionais e muito mais.'],
+      ['O acesso ao material é vitalício?', 'Sim. Após a compra você tem acesso imediato e vitalício ao material em PDF.'],
+      ['Posso usar as fichas para vender meus produtos?', 'Sim. As configurações ajudam você a cortar certo de primeira e produzir mais para vender.'],
+      ['Qual a diferença entre o Pacote Básico e o Pacote Completo?', 'O Básico traz as 100 fichas de configuração. O Completo inclui tudo isso mais os 5 bônus exclusivos.'],
+      ['Tenho garantia se eu não gostar?', 'Sim. Você tem 15 dias de garantia incondicional: se não gostar, devolvemos 100% do valor.'],
+      ['Como funciona o suporte se eu tiver dúvida?', 'Você pode entrar em contato pelo suporte por e-mail e será atendida o quanto antes.']
+    ];
+    var chevron = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-chevron h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200"><path d="m6 9 6 6 6-6"></path></svg>';
+    var list = document.getElementById('faq-list');
+    list.innerHTML = faqs.map(function (f) {
+      return '<div class="faq-item rounded-2xl border border-[#1FAE5C]/40 bg-[#1FAE5C]/5 px-5">' +
+        '<button type="button" class="faq-trigger flex w-full flex-1 items-center justify-between py-4 text-sm cursor-pointer text-left font-bold">' + f[0] + chevron + '</button>' +
+        '<div class="faq-panel text-sm text-muted-foreground"><p class="pb-4">' + f[1] + '</p></div>' +
+        '</div>';
+    }).join('');
+    list.querySelectorAll('.faq-trigger').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var item = btn.closest('.faq-item');
+        var wasOpen = item.classList.contains('open');
+        list.querySelectorAll('.faq-item').forEach(function (i) { i.classList.remove('open'); });
+        if (!wasOpen) item.classList.add('open');
+      });
+    });
+  })();
+
+  // CTA buttons scroll to pricing
+  document.querySelectorAll('[data-cta]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var el = document.getElementById('planos');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
+</body>
+</html>
