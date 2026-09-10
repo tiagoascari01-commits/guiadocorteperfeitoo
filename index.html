@@ -45,6 +45,15 @@
 </noscript>
 <!-- End Meta Pixel Code -->
 
+<!-- Utmify UTMs -->
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito+Sans:wght@400;600;700&display=swap">
@@ -260,7 +269,7 @@
         <div class="mt-1 flex items-end justify-center gap-2"><span class="text-5xl font-black text-[#1FAE5C]">R$19,90</span></div>
         <p class="mx-auto mt-4 w-fit rounded-full bg-[#1FAE5C]/10 px-5 py-2 text-center text-sm font-black text-[#1FAE5C]">VALOR ECONOMIZADO: R$128,00</p>
         <ul class="mt-6 space-y-3 text-[15px]" id="completo-list"></ul>
-        <div class="mt-auto pt-8 flex justify-center"><a href="https://pay.wiapy.com/ERVaaCcCEJpU" class="inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 text-base font-bold tracking-wide transition-all duration-200 hover:scale-[1.03] active:scale-95 bg-[#1FAE5C] text-white shadow-[var(--shadow-soft)] hover:shadow-xl animate-[pulse-cta_1.8s_ease-in-out_infinite]">QUERO O COMPLETO AGORA</a></div>
+        <div class="mt-auto pt-8 flex justify-center"><button data-checkout="https://pay.wiapy.com/ERVaaCcCEJpU" class="inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 text-base font-bold tracking-wide transition-all duration-200 hover:scale-[1.03] active:scale-95 bg-[#1FAE5C] text-white shadow-[var(--shadow-soft)] hover:shadow-xl animate-[pulse-cta_1.8s_ease-in-out_infinite]">QUERO O COMPLETO AGORA</button></div>
       </div>
     </div>
   </div>
@@ -423,6 +432,22 @@
   document.querySelectorAll('[data-cta]').forEach(function (b) {
     b.addEventListener('click', goToPlanos);
   });
+
+  // Redireciona repassando os parâmetros da URL atual (window.location.search)
+  function redirectWithParams(url) {
+    var qs = window.location.search; // ex.: "?utm_source=..." ou ""
+    if (qs) {
+      url += (url.indexOf('?') === -1 ? qs : '&' + qs.slice(1));
+    }
+    window.location.href = url;
+  }
+
+  // Botões de checkout (data-checkout) redirecionam via window.location.href
+  document.querySelectorAll('[data-checkout]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      redirectWithParams(b.getAttribute('data-checkout'));
+    });
+  });
 </script>
 
 <!-- Pop-up de upsell -->
@@ -485,8 +510,8 @@
     function close() { overlay.classList.remove('open'); document.body.style.overflow = ''; }
     if (basico) basico.addEventListener('click', open);
     document.getElementById('upsell-close').addEventListener('click', close);
-    document.getElementById('upsell-decline').addEventListener('click', function () { window.location.href = 'https://pay.wiapy.com/2ERmXRBVd5W7'; });
-    document.getElementById('upsell-cta').addEventListener('click', function () { window.location.href = 'https://pay.wiapy.com/7dePnf0Blae'; });
+    document.getElementById('upsell-decline').addEventListener('click', function () { redirectWithParams('https://pay.wiapy.com/2ERmXRBVd5W7'); });
+    document.getElementById('upsell-cta').addEventListener('click', function () { redirectWithParams('https://pay.wiapy.com/7dePnf0Blae'); });
     overlay.addEventListener('click', function (e) { if (e.target === overlay) close(); });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
   })();
