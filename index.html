@@ -441,30 +441,45 @@
     });
   })();
 
-  // CTA buttons scroll to pricing (com autocorreção contra layout shift de imagens)
-  var pendingScroll = false, pendingTimer = null;
-  function alignPlanos() {
-    var el = document.getElementById('planos');
-    if (el && pendingScroll) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
+  // CTA buttons -> rolagem que RECALCULA o alvo a cada quadro (à prova de layout shift/lazy no mobile).
+  // Se os depoimentos renderizarem no meio da rolagem e empurrarem a oferta pra baixo,
+  // a rolagem continua atrás dela até estabilizar no topo dos cards.
   function goToPlanos() {
-    pendingScroll = true;
-    clearTimeout(pendingTimer);
-    // re-alinha (suave) conforme as imagens acima terminam de carregar e mudam a altura
-    [0, 250, 600, 1100, 1700].forEach(function (ms) { setTimeout(alignPlanos, ms); });
-    pendingTimer = setTimeout(function () { pendingScroll = false; }, 2200);
+    var el = document.getElementById('planos');
+    if (!el) return;
+    var cancelled = false, stableFrames = 0;
+    var startTime = performance.now();
+    var sticky = document.querySelector('.sticky');
+
+    function onUser() { cancelled = true; teardown(); }
+    function teardown() {
+      ['wheel', 'touchmove', 'keydown'].forEach(function (e) { window.removeEventListener(e, onUser); });
+    }
+    // só cancela em gesto de rolagem real (não no toque do botão)
+    ['wheel', 'touchmove', 'keydown'].forEach(function (e) { window.addEventListener(e, onUser, { passive: true }); });
+
+    function step(now) {
+      if (cancelled) return;
+      var offset = sticky ? sticky.getBoundingClientRect().height : 0;
+      var current = window.pageYOffset || document.documentElement.scrollTop || 0;
+      var target = current + el.getBoundingClientRect().top - offset;
+      var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      if (target > maxScroll) target = maxScroll;
+      if (target < 0) target = 0;
+      var diff = target - current;
+      if (Math.abs(diff) <= 1.5) {
+        stableFrames++;
+        if (stableFrames >= 10 || now - startTime > 4000) { window.scrollTo(0, target); teardown(); return; }
+      } else {
+        stableFrames = 0;
+        window.scrollTo(0, current + diff * 0.22); // easing
+      }
+      requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
   }
   document.querySelectorAll('[data-cta]').forEach(function (b) {
     b.addEventListener('click', goToPlanos);
-  });
-  // Ao terminar de carregar qualquer imagem (ou tudo), reposiciona no #planos
-  document.querySelectorAll('img').forEach(function (img) {
-    img.addEventListener('load', alignPlanos);
-  });
-  window.addEventListener('load', alignPlanos);
-  // Se o usuário rolar manualmente (gesto de rolagem, não o toque no botão), cancela a correção
-  ['wheel', 'touchmove', 'keydown'].forEach(function (ev) {
-    window.addEventListener(ev, function () { pendingScroll = false; }, { passive: true });
   });
 
   // Redireciona repassando os parâmetros da URL atual (window.location.search)
